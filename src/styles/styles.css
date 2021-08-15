@@ -1,0 +1,86 @@
+:root {
+    --default-bg: #1D1E20;
+    --accent-bg: #282C34;
+    --default-font-color: #FFFFFF;
+    --accent-font-color: #ABB2BF;
+}
+
+body {
+    background-color: var(--default-bg);
+    color: var(--default-font-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+}
+
+ul.nav-items {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+li.items {
+    margin: 1rem;
+}
+
+.logo {
+    padding-left: 1rem;
+    margin-right: auto;
+    font-family: 'Fira Code', monospace;
+    font-weight: Bold;
+}
+
+.window {
+    background-color: var(--accent-bg);
+    border-radius: 0.625rem;
+    width: 75%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.ui-buttons,
+.ui-elements {
+    display: flex;
+}
+
+.ui-buttons {
+    margin-right: auto;
+}
+
+.ui-buttons div{
+    width: 1rem;
+    height: 1rem;
+    margin: 0.4rem;
+    border-radius: 50%;
+}
+
+.red-circle {
+    background-color: #FF5F56;
+}
+
+.yellow-circle {
+    background-color: #FFBD2E;
+}
+
+.green-circle {
+    background-color: #27C93F;
+}
+
+.contact {
+    color: var(--accent-font-color);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+.main-content {
+    display: flex;
+}
+
+.intro p{
+    font-family: 'Fira Mono', monospace;
+
+}
