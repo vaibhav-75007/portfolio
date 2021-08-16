@@ -3,6 +3,7 @@
     --accent-bg: #282C34;
     --default-font-color: #FFFFFF;
     --accent-font-color: #ABB2BF;
+    font-family: 'Fira Mono', monospace;
 }
 
 body {
