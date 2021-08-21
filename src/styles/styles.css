@@ -1,159 +1,157 @@
 :root {
-    --default-bg: #1D1E20;
-    --accent-bg: #282C34;
-    --default-font-color: #FFFFFF;
-    --accent-font-color: #ABB2BF;
-    font-family: 'Fira Mono', monospace;
+  --default-bg: #1d1e20;
+  --accent-bg: #282c34;
+  --default-font-color: #ffffff;
+  --accent-font-color: #abb2bf;
+  font-family: "Fira Mono", monospace;
 }
 
 body {
-    background-color: var(--default-bg);
-    color: var(--default-font-color);
-    margin: 0;
-    padding: 0;
+  background-color: var(--default-bg);
+  color: var(--default-font-color);
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    display: flex;
+  display: flex;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
-p{
-    font-family: 'Fira Mono', monospace;
+p {
+  font-family: "Fira Mono", monospace;
 }
 
 ul.nav-items {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
 }
 
 li.items {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .logo {
-    padding-left: 1rem;
-    margin-right: auto;
-    font-family: 'Fira Code', monospace;
-    font-weight: Bold;
+  padding-left: 1rem;
+  margin-right: auto;
+  font-family: "Fira Code", monospace;
+  font-weight: Bold;
 }
 
 .window {
-    background-color: var(--accent-bg);
-    border-radius: 0.625rem;
-    width: 75%;
-    margin: auto;
-    padding: 1rem;
+  background-color: var(--accent-bg);
+  border-radius: 0.625rem;
+  width: 75%;
+  margin: auto;
+  padding: 1rem;
 }
 
 .ui-buttons,
 .ui-elements {
-    display: flex;
+  display: flex;
 }
 
 .ui-buttons {
-    margin-right: auto;
+  margin-right: auto;
 }
 
-.ui-buttons div{
-    width: 1rem;
-    height: 1rem;
-    margin: 0.4rem;
-    border-radius: 50%;
+.ui-buttons div {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.4rem;
+  border-radius: 50%;
 }
 
 .red-circle {
-    background-color: #FF5F56;
+  background-color: #ff5f56;
 }
 
 .yellow-circle {
-    background-color: #FFBD2E;
+  background-color: #ffbd2e;
 }
 
 .green-circle {
-    background-color: #27C93F;
+  background-color: #27c93f;
 }
 
 .contact {
-    color: var(--accent-font-color);
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+  color: var(--accent-font-color);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
 }
 
 .main-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "left-side right-side";
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left-side right-side";
+  justify-content: center;
 }
 
 .pfp {
-    grid-area: 'left-side';
-    padding: 6rem 0;
+  grid-area: "left-side";
+  padding: 6rem 0;
 }
 
-.pfp img{
-    height: 200px;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    object-fit: cover;
+.pfp img {
+  height: 230px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  object-fit: cover;
 }
 
 .right-side {
-    grid-area: right-side;
-    display: grid;
-    align-content: center;
+  grid-area: right-side;
+  display: grid;
+  align-content: center;
 }
 
 .intro-shadow {
-    background-color: #1f2229;
-    width: 14.5rem;
-    height: 6rem;
-    padding-top: 2rem;
-    padding-left: 2rem;
+  background-color: #1f2229;
+  width: 15rem;
+  height: 6rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 
 .intro {
-    position: relative;
-    width: 14.5rem;
-    border: 1px solid #4078f2;
-    padding: 1rem;
-    background-color: rgba(40, 44, 52, 0.8);
+  position: relative;
+  width: 15rem;
+  border: 1px solid #4078f2;
+  padding: 1rem;
+  background-color: rgba(40, 44, 52, 0.8);
 }
 
 .corner {
-    position: absolute;
-    width: .5rem;
-    height: .5rem;
-    border-radius: 50%;
-    border: 2px solid #4078f2;
-    background-color: #fff;
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #4078f2;
+  background-color: #fff;
 }
 
 #corner-tl {
-    top: -5px;
-    left: -5px;
+  top: -5px;
+  left: -5px;
 }
 
 #corner-tr {
-    top: -5px;
-    right: -5px;
+  top: -5px;
+  right: -5px;
 }
 
 #corner-br {
-    bottom: -5px;
-    right: -5px;
+  bottom: -5px;
+  right: -5px;
 }
 
 #corner-bl {
-    bottom: -5px;
-    left: -5px;
+  bottom: -5px;
+  left: -5px;
 }
-
