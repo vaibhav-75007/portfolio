@@ -128,15 +128,15 @@ a:hover {
 
 .intro-shadow {
   background-color: #1f2229;
-  width: 14rem;
-  height: 5rem;
-  padding-top: 2rem;
-  padding-left: 2rem;
+  max-width: 14rem;
+  max-height: 5rem;
+  padding-top: 2vw;
+  padding-left: 2vw;
 }
 
 .intro {
   position: relative;
-  width: 15rem;
+  min-width: 15rem;
   border: 1px solid #4078f2;
   padding: 1rem;
   background-color: rgba(40, 44, 52, 0.8);
