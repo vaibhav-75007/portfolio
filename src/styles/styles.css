@@ -25,28 +25,18 @@ p {
   font-family: "Fira Mono", monospace;
 }
 
+svg {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
 ul.nav-items {
-  display: flex;
-  text-decoration: none;
-  list-style: none;
+	list-style: none;
 }
 
 li.items {
-  margin: 1rem;
-}
-
-a {
-  color: var(--default-font-color)
-}
-
-a:link {
-  color: var(--default-font-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--accent-font-color);
-  text-decoration: none;
+	display: inline-block;
+	margin-right: 1rem;
 }
 
 .logo {
