@@ -103,6 +103,7 @@ li.items {
   display: block;
   margin: 0 auto;
   object-fit: cover;
+  border: 1px solid #4078f2;
 }
 
 .right-side {
@@ -112,6 +113,7 @@ li.items {
   padding: 3rem;
 }
 
+/*
 .intro-shadow {
   background-color: #1f2229;
   width: 14rem;
@@ -119,13 +121,18 @@ li.items {
   padding-top: 2rem;
   padding-left: 2rem;
 }
+*/
 
 .intro {
   position: relative;
-  width: 15rem;
+  max-width: 15rem;
   border: 1px solid #4078f2;
   padding: 1rem;
   background-color: rgba(40, 44, 52, 0.8);
+}
+
+.intro.shadow {
+  box-shadow: -20px 20px 15px rgba(0, 0, 0, 0.13)
 }
 
 .corner {
