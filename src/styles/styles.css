@@ -117,6 +117,7 @@ a:hover {
   display: block;
   margin: 0 auto;
   object-fit: cover;
+  border: 1px solid #4078f2;
 }
 
 .right-side {
@@ -126,6 +127,7 @@ a:hover {
   padding: 3rem;
 }
 
+/*
 .intro-shadow {
   background-color: #1f2229;
   max-width: 14rem;
@@ -133,13 +135,18 @@ a:hover {
   padding-top: 2vw;
   padding-left: 2vw;
 }
+*/
 
 .intro {
   position: relative;
-  min-width: 15rem;
+  max-width: 15rem;
   border: 1px solid #4078f2;
   padding: 1rem;
   background-color: rgba(40, 44, 52, 0.8);
+}
+
+.intro.shadow {
+  box-shadow: -20px 20px 15px rgba(0, 0, 0, 0.13)
 }
 
 .corner {
