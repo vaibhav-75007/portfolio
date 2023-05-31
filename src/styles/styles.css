@@ -3,6 +3,7 @@
   --accent-bg: #282c34;
   --default-font-color: #ffffff;
   --accent-font-color: #abb2bf;
+  --ui-fg: #455881;
   font-family: "Fira Mono", monospace;
 }
 
@@ -23,6 +24,7 @@ img {
 
 p {
   font-family: "Fira Mono", monospace;
+  margin: 0; /* due to some reason p tags have a default margin and its messing up the ui, hence its explicitly set to 0 */
 }
 
 svg {
@@ -52,6 +54,10 @@ li.items {
   width: 75%;
   margin: auto;
   padding: 1rem;
+}
+
+.ui-buttons {
+  padding-bottom: 0.4rem;
 }
 
 .ui-buttons,
@@ -94,6 +100,7 @@ li.items {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "left-side right-side";
   justify-content: center;
+  border-top: 1px solid var(--ui-fg);
 }
 
 .pfp {
@@ -104,17 +111,15 @@ li.items {
 .pfp img {
   height: 220px;
   border-radius: 50%;
-  display: block;
   margin: 0 auto;
   object-fit: cover;
-  border: 1px solid #4078f2;
+  border: 1px solid var(--ui-fg);
 }
 
 .right-side {
   grid-area: right-side;
   display: grid;
   align-content: center;
-  padding: 3rem;
 }
 
 /*
@@ -129,17 +134,29 @@ li.items {
 
 .intro {
   position: relative;
-  max-width: 15rem;
-  border: 1px solid #4078f2;
-  padding: 1rem;
-  background-color: rgba(40, 44, 52, 0.8);
+  /* max-width: 15rem; */
+  /* border: 1px solid #4078f2; */
 }
 
-.intro.shadow {
+p.l1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-bottom: 0rem;
+}
+
+p.l2 {
+  font-size: 2rem;
+}
+
+p.l3 {
+  font-size: 1.2rem
+}
+
+/* .intro.shadow {
   box-shadow: -20px 20px 15px rgba(0, 0, 0, 0.13)
-}
+} */
 
-.corner {
+/* .corner {
   position: absolute;
   width: 0.5rem;
   height: 0.5rem;
@@ -166,7 +183,7 @@ li.items {
 #corner-bl {
   bottom: -5px;
   left: -5px;
-}
+} */
 
 @media screen and (max-width: 800px) {
   .main-content {
@@ -176,5 +193,6 @@ li.items {
 
   .right-side {
     justify-content: center;
+    margin: 0 2rem;
   }
 }
