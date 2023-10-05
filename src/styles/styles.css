@@ -3,6 +3,7 @@
   --accent-bg: #282c34;
   --default-font-color: #ffffff;
   --accent-font-color: #abb2bf;
+  --border-color: #656970;
   font-family: "Fira Mono", monospace;
 }
 
@@ -15,10 +16,12 @@ body {
 
 header {
   position: fixed;
-  background-color: rgba(0, 0, 0, 50%);
+  background-color: rgba(0, 0, 0, 45%);
   height: 100%;
   width: 11rem;
-  border-right: #abb2bf;
+  border-right: 1px solid #656970;
+  top: 0;
+  left: 0;
 }
 
 img {
@@ -75,6 +78,11 @@ a:hover {
   justify-content: center;
 }
 
+p#l1 {
+  font-size: 5rem;
+  font-weight: semi-bold;
+}
+
 .pfp {
   grid-area: right-side;
   padding: 6rem 0;
@@ -86,7 +94,7 @@ a:hover {
   display: block;
   margin: 0 auto 0 0;
   object-fit: cover;
-  border: 1px solid #4078f2;
+  border: 1px solid #656970;
 }
 
 .right-side {
@@ -100,42 +108,7 @@ a:hover {
 .intro {
   position: relative;
   max-width: 15rem;
-  border: 1px solid #4078f2;
   padding: 1rem;
-  background-color: rgba(40, 44, 52, 0.8);
-}
-
-.intro.shadow {
-  box-shadow: -20px 20px 15px rgba(0, 0, 0, 0.13)
-}
-
-.corner {
-  position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  border: 2px solid #4078f2;
-  background-color: #fff;
-}
-
-#corner-tl {
-  top: -5px;
-  left: -5px;
-}
-
-#corner-tr {
-  top: -5px;
-  right: -5px;
-}
-
-#corner-br {
-  bottom: -5px;
-  right: -5px;
-}
-
-#corner-bl {
-  bottom: -5px;
-  left: -5px;
 }
 
 @media screen and (max-width: 800px) {
