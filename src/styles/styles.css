@@ -16,9 +16,9 @@ body {
 
 header {
   position: fixed;
-  background-color: rgba(0, 0, 0, 45%);
+  background-color: #101112;
   height: 100%;
-  width: 11rem;
+  width: 12rem;
   border-right: 1px solid #656970;
   top: 0;
   left: 0;
@@ -30,6 +30,7 @@ img {
 
 p {
   font-family: "Fira Mono", monospace;
+  font-size: 1.2rem;
 }
 
 ul.nav-items {
@@ -73,13 +74,14 @@ a:hover {
 
 .main-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: "left-side right-side";
-  justify-content: center;
+  width: auto;
+  border-bottom: #656970 1px solid;
 }
 
-p#l1 {
-  font-size: 5rem;
+h1#l1 {
+  font-size: 4rem;
   font-weight: semi-bold;
 }
 
@@ -89,26 +91,29 @@ p#l1 {
 }
 
 .pfp img {
-  height: 220px;
+  height: 15rem;
   border-radius: 50%;
   display: block;
-  margin: 0 auto 0 0;
+  margin-right: auto;
+  margin-left: 10%;
   object-fit: cover;
   border: 1px solid #656970;
 }
 
-.right-side {
+.left-side {
   grid-area: left-side;
-  margin: 0 auto;
+  margin: 0 auto 0 30%;
   display: grid;
   align-content: center;
-  padding: 3rem;
+  padding: 0 0 0 3rem;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .intro {
   position: relative;
-  max-width: 15rem;
-  padding: 1rem;
+  max-width: 25rem;
+  min-width: 12rem;
 }
 
 @media screen and (max-width: 800px) {
