@@ -53,8 +53,8 @@ a:link {
 }
 
 a:hover {
-  color: var(--accent-font-color);
-  text-decoration: none;
+  color: #0ff0fc;
+  text-decoration: underline;
 }
 
 .logo {
@@ -64,6 +64,11 @@ a:hover {
   justify-content: center;
   font-family: "Fira Code", monospace;
   font-weight: Bold;
+  color:#0ff0fc;
+}
+
+.logo:hover {
+  text-decoration: underline;
 }
 
 .navlinks {
@@ -106,14 +111,33 @@ h1#l1 {
   display: grid;
   align-content: center;
   padding: 0 0 0 3rem;
-  padding-top: 0;
-  margin-top: 0;
 }
 
 .intro {
-  position: relative;
   max-width: 25rem;
   min-width: 12rem;
+}
+
+.sections {
+  margin: 0 auto 0 20%;
+  padding: 0 0 0 3rem;
+}
+
+.about-section {
+  border-bottom: #656970 1px solid;
+}
+
+.sections h1 {
+  font-size: 2rem;
+}
+
+.sections a {
+  color: #0ff0fc;
+  transition: ease-in-out 0.8s;
+}
+
+.sections a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 800px) {
