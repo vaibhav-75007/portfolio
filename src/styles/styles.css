@@ -11,7 +11,7 @@ body {
   background-color: var(--default-bg);
   color: var(--default-font-color);
   margin: 0;
-  padding: 0;
+  padding: 0 0 5rem 0;
 }
 
 header {
@@ -44,7 +44,8 @@ li.items {
 }
 
 a {
-  color: var(--default-font-color)
+  color: var(--default-font-color);
+  text-decoration: none;
 }
 
 a:link {
@@ -67,6 +68,10 @@ a:hover {
   color:#0ff0fc;
 }
 
+.logo a {
+  color:#0ff0fc;
+}
+
 .logo:hover {
   text-decoration: underline;
 }
@@ -83,6 +88,7 @@ a:hover {
   grid-template-areas: "left-side right-side";
   width: auto;
   border-bottom: #656970 1px solid;
+  padding-bottom: 4rem;
 }
 
 h1#l1 {
@@ -114,13 +120,33 @@ h1#l1 {
 }
 
 .intro {
-  max-width: 25rem;
+  max-width: 30rem;
   min-width: 12rem;
+}
+
+.gotogithub {
+  background-color: #282c34;
+  color: var(--default-font-color);
+  cursor: pointer;
+  width: 13rem;
+  height: 4rem;
+  font: inherit;
+  box-shadow: none;
+  text-decoration: none;
+  border:#656970 1px solid;
+  transition: ease-in-out 0.125s;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.gotogithub:hover {
+  border:#656970 2px solid;
+  color: #0ff0fc;
 }
 
 .sections {
   margin: 0 auto 0 20%;
-  padding: 0 0 0 3rem;
+  padding: 4rem 0 4rem 3rem;
 }
 
 .about-section {
@@ -133,11 +159,25 @@ h1#l1 {
 
 .sections a {
   color: #0ff0fc;
-  transition: ease-in-out 0.8s;
+  cursor: pointer;
 }
 
 .sections a:hover {
   text-decoration: underline;
+}
+
+.about p {
+  max-width: 60rem;
+}
+
+.sections li a {
+  color: #fff01f;
+  
+}
+
+.projects li {
+  padding: 1rem 0;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 800px) {
