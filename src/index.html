@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Fira+Mono&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Portfolio - Vaibhav</title>
   </head>
@@ -20,7 +24,7 @@
         <ul class="nav-items">
           <li class="items"><a href="#about">about</a></li>
           <li class="items"><a href="#projects">projects</a></li>
-          <li class="items"><a href="./contact.html">contact</a></li>
+          <li class="items"><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -81,6 +85,45 @@
             a basic scientific calculator using java swing.
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact sections">
+        <h1><a id="contact" href="#contact">contact and social</a></h1>
+        <div class="contact-container">
+          <form class="contact-form contact-item" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+          <div class="social contact-item">
+            <a class="icons" href="https://www.linkedin.com/in/vaibhav-p-dev/"
+              ><i class="fa-brands fa-linkedin fa-3x"></i
+            ></a>
+            <a class="icons" href="https://github.com/Martian-dev"
+              ><i class="fa-brands fa-github fa-3x"></i
+            ></a>
+            <a class="icons" href="https://twitter.com/martian75007"
+              ><i class="fa-brands fa-twitter fa-3x"></i
+            ></a>
+            <a class="icons" href="https://www.kaggle.com/martian7"
+              ><i class="fa-brands fa-kaggle fa-3x"></i
+            ></a>
+            <a class="icons" href="https://discord.com/users/715811320728911902"
+              ><i class="fa-brands fa-discord fa-3x"></i
+            ></a>
+            <a class="icons" href="https://leetcode.com/martian75007/"
+              ><i class="fa-solid fa-l fa-3x"></i
+            ></a>
+          </div>
+        </div>
       </div>
     </section>
     <script src="scripts/script.js"></script>
