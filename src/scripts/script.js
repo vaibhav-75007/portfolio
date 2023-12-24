@@ -1,13 +1,13 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getDatabase, ref, set, push, } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
-require(['dotenv'])
 
 // Your web app's Firebase configuration
 // import firebaseConfig from '../dat.json' assert { type: 'json' };
-// const dat = await fetch('../../src/dat.json');
-// const firebaseConfig = await dat.json();
+const dat = await fetch('../../src/dat.json');
+const firebaseConfig = await dat.json();
 
+/*
 const firebaseConfig = {
   apiKey: process.env.apiKey,
   authDomain: process.env.authDomain,
@@ -16,7 +16,7 @@ const firebaseConfig = {
   storageBucket: process.env.storageBucket,
   messagingSenderId: process.env.messagingSenderId,
   appId: process.env.appId
-}
+} */
 
 // https://firebase.google.com/docs/web/setup#available-libraries
 
