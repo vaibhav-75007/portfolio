@@ -187,7 +187,7 @@ form {
     margin: 0 3rem;
     line-height: 1.5;
     font: inhert;
-    grid-area: rghtside;
+    grid-area: lftside;
 }
 
 label {
@@ -220,6 +220,11 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #3e8e41;
+}
+
+.alert {
+  display: none;
+  color: #4CAF50;
 }
 
 .contact-container {
@@ -257,7 +262,7 @@ button[type="submit"]:hover {
 }
 
 .social {
-  grid-area: lftside;
+  grid-area: rghtside;
   display: grid;
   grid-template-columns: 3rem 3rem 3rem;
   grid-template-rows: 3rem 3rem 3rem;
