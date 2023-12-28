@@ -2,3 +2,7 @@ node_modules/
 package-lock.json
 .env
 dat.json
+.vscode/
+
+# temp
+package.json
